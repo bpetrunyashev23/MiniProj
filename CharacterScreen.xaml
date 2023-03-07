@@ -1,0 +1,43 @@
+﻿<Window x:Class="MiniProj.CharacterScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MiniProj"
+        mc:Ignorable="d"
+        Title="CharacterScreen" Height="933" Width="421">
+    <Grid>
+        <Image Source="C:\Users\soulk\Downloads\AddForChars\Group 2.png" VerticalAlignment="Center" Margin="-10,0,-9,0"/>
+        <TextBox x:Name="txtCharname" HorizontalAlignment="Center" Margin="0,659,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Height="28" Background="#FF6CA4D8" FontFamily="Algerian" FontSize="14" Foreground="#FFFDFDFD"/>
+        <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Margin="0,622,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Matura MT Script Capitals" Foreground="White" Width="196" Height="28" FontSize="24"><Run Text="Character Name"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="SignUpClick" Click="Button_Click_Create" Margin="130,716,131,102" RenderTransformOrigin="0.5,1.36" Opacity="0">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Ellipse Fill="{TemplateBinding Background}"/>
+                        <ContentPresenter/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Margin="0,526,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Matura MT Script Capitals" Foreground="White" Width="216" Height="68" FontSize="24" Text="Click here to show your characters&#xD;&#xA;"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="102,526,0,0" VerticalAlignment="Top" Height="62" Width="200" Opacity="0" Click="Button_Click" RenderTransformOrigin="0.548,-0.08"/>
+        <DataGrid x:Name="DataGrid_" Margin="48,54,49,635"/>
+        <Button x:Name="SignUpClick_Copy" Click="Button_Click_Launch" Margin="130,359,131,458" RenderTransformOrigin="0.5,1.36" Opacity="0.01">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Ellipse Fill="{TemplateBinding Background}"/>
+                        <ContentPresenter/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBox x:Name="txtLaunch" HorizontalAlignment="Center" Margin="0,308,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Height="28" Background="#FF6CA4D8" FontFamily="Algerian" FontSize="14" Foreground="#FFFDFDFD"/>
+        <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Margin="0,474,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Matura MT Script Capitals" Foreground="White" Width="216" Height="28" FontSize="24" Text="Delete Character(s)"/>
+        <Button Content="Button" HorizontalAlignment="Center" Margin="0,474,0,0" VerticalAlignment="Top" Height="32" Width="216" Opacity="0" Click="Delete_Char"/>
+        <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Margin="0,820,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Matura MT Script Capitals" Foreground="White" Width="196" Height="28" FontSize="24" Text="Log Out"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="32" Margin="153,820,0,0" VerticalAlignment="Top" Width="118" Opacity="0" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

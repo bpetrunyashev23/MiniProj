@@ -1,0 +1,30 @@
+﻿<Window x:Class="MiniProj.SignUp"
+    	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    	xmlns:local="clr-namespace:MiniProj"
+    	mc:Ignorable="d"
+    	Title="MainWindow" Height="933" Width="421">
+    <Grid>
+        <Image Source="C:\Users\soulk\Downloads\SignUp\Group 2.png" VerticalAlignment="Top" Margin="0,5,0,0" HorizontalAlignment="Center" Width="421"/>
+        <Image Source="C:\Users\soulk\Downloads\Login\Log In.png" VerticalAlignment="Top" Margin="0,787,0,0" HorizontalAlignment="Center" Width="109" Height="50"/>
+        <Button x:Name="SignUpClick" Click="Button_Click" Margin="130,667,130,152" RenderTransformOrigin="0.5,1.36" Opacity="0">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Ellipse Fill="{TemplateBinding Background}"/>
+                        <ContentPresenter/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Margin="115,464,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Height="27" Background="#FFEA5E5E" FontFamily="Algerian" FontSize="14" Foreground="#FFFDFDFD"/>
+        <TextBlock HorizontalAlignment="Left" Margin="113,427,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" FontFamily="Matura MT Script Capitals " Foreground="White" Width="122" Height="28" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Margin="113,496,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontFamily="Matura MT Script Capitals" Foreground="White" Width="122" Height="28" FontSize="24"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="113,528,0,0" VerticalAlignment="Top" Width="176" Height="27" Background="#FFEA5E5E" FontFamily="Algerian" FontSize="14" Foreground="#FFFDFDFD"/>
+        <TextBlock HorizontalAlignment="Left" Margin="113,555,0,0" TextWrapping="Wrap" Text="Repeat Password" VerticalAlignment="Top" FontFamily="Matura MT Script Capitals" Foreground="White" Width="208" Height="28" FontSize="24"/>
+        <PasswordBox x:Name="txtPassword_Check" HorizontalAlignment="Left" Margin="113,587,0,0" VerticalAlignment="Top" Width="176" Height="27" Background="#FFEA5E5E" FontFamily="Algerian" FontSize="14" Foreground="#FFFDFDFD"/>
+        <Button Content="Button" HorizontalAlignment="Center" Margin="0,787,0,0" VerticalAlignment="Top" Height="45" Width="110" Opacity="0" Click="Button_Click_1"/>
+    </Grid>
+</Window>
