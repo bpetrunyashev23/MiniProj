@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="CharacterScreen" Height="933" Width="421">
     <Grid>
-        <Image Source="C:\Users\soulk\Downloads\AddForChars\Group 2.png" VerticalAlignment="Center" Margin="-10,0,-9,0"/>
+        <Image VerticalAlignment="Center" Margin="-10,0,-9,0" Source="/Images/Lich.png"/>
         <TextBox x:Name="txtCharname" HorizontalAlignment="Center" Margin="0,659,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Height="28" Background="#FF6CA4D8" FontFamily="Algerian" FontSize="14" Foreground="#FFFDFDFD"/>
         <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Margin="0,622,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Matura MT Script Capitals" Foreground="White" Width="196" Height="28" FontSize="24"><Run Text="Character Name"/><LineBreak/><Run/></TextBlock>
         <Button x:Name="SignUpClick" Click="Button_Click_Create" Margin="130,716,131,102" RenderTransformOrigin="0.5,1.36" Opacity="0">

@@ -7,8 +7,8 @@
     	mc:Ignorable="d"
     	Title="MainWindow" Height="933" Width="421">
     <Grid>
-        <Image Source="C:\Users\soulk\Downloads\SignUp\Group 2.png" VerticalAlignment="Top" Margin="0,5,0,0" HorizontalAlignment="Center" Width="421"/>
-        <Image Source="C:\Users\soulk\Downloads\Login\Log In.png" VerticalAlignment="Top" Margin="0,787,0,0" HorizontalAlignment="Center" Width="109" Height="50"/>
+        <Image Source="/Images/Group 2.png" VerticalAlignment="Top" Margin="0,5,0,0" HorizontalAlignment="Center" Width="421"/>
+        <Image Source="/Images/Log In.png" VerticalAlignment="Top" Margin="0,787,0,0" HorizontalAlignment="Center" Width="109" Height="50"/>
         <Button x:Name="SignUpClick" Click="Button_Click" Margin="130,667,130,152" RenderTransformOrigin="0.5,1.36" Opacity="0">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
